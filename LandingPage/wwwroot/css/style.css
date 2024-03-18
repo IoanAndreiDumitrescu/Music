@@ -80,8 +80,8 @@ body {
 .offcanvas-header {
     background-color: #220721;
 }
-    .carousel-inner img {
-    margin-left: 290px;
+.carousel-item img {
+    padding-left: 30%;
     width: 70%;
     height: 70%;
 }
