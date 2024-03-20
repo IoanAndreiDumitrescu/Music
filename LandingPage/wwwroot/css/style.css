@@ -1,9 +1,15 @@
 
+
 body {
-    background-image: url('../images/background.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url('../images/background.png') no-repeat center center fixed;
+    /* 'center center fixed' is for positioning and attaching the image */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* 'cover' ensures that the image scales as needed to completely fill and cover the area */
 }
+
 .navbar {
     background-color: #220721;
     height: 80px;
@@ -73,7 +79,26 @@ body {
         visibility: visible;
     }
 }
-
+@media only screen and (max-width: 600px) {
+    .box-wrapper {
+        display: block;
+    }
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .box-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .box {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
 .offcanvas-body {
     background-color: #220721;
 }
@@ -123,7 +148,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color:none
+
 }
 
 main {
@@ -212,3 +237,4 @@ main {
 .section-footer {
     background-color: #220721;
 }
+
