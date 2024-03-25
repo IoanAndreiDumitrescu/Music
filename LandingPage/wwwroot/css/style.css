@@ -33,28 +33,27 @@ body {
     transition: 0.3s background-color;
 }
 
-    .login-button:hover {
-        background-color: #e3d1ed;
-        opacity: 30%;
-    }
+.login-button:hover {
+    background-color: #e3d1ed;
+    opacity: 30%;
+}
 
 .navbar-toggler {
     border: none;
     font-size: 1.25rem;
     color: white;
-}
 
-.navbar-toggler-icon {
+}
+.navbar-toggler-icon{
     content: "";
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 20%;
-    transition: all 0.3s ease-in-out;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 20%;
+        transition: all 0.3s ease-in-out;
 }
-
 .navbar-toggler:focus, .btn-close:focus {
     box-shadow: none;
     outline: none;
@@ -66,9 +65,9 @@ body {
     position: relative;
 }
 
-    .nav-link:hover, .nav-link.active {
-        color: #000;
-    }
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
 
 
 
@@ -92,16 +91,16 @@ body {
     }
 }
 
-/*.box-wrapper {
+.box-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .box {
-    flex-basis: 24%;*/ /* 4 boxes in a row */
-/*margin: 0.5em;
-}*/
+    flex-basis: 24%; /* 4 boxes in a row */
+    margin: 0.5em;
+}
 
 /* Responsive adjustment */
 @media (max-width: 768px) { /* adjust this value based on when you want to switch to single column layout */
@@ -113,8 +112,7 @@ body {
 .offcanvas-body {
     background-color: #220721;
 }
-
-.offcanvas-header button {
+.offcanvas-header button{
     background-color: white;
 }
 
@@ -142,7 +140,7 @@ body {
     justify-content: space-around;
 }
 
-/*.box {
+.box {
     height: 300px;
     width: 300px;
     position: relative;
@@ -177,9 +175,9 @@ main {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
-}*/
+}
 
-/*.hero-section main {
+.hero-section main {
     width: 30vw;
     height: 30vh;
     flex-direction: row;
@@ -203,36 +201,10 @@ main {
     text-transform: uppercase;
     font-size: 14px;
     transition: all 0.5s;
-}*/
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around
-}
-
-.card {
-    width: 250px;
-    margin-bottom: 10px;
-    color: white;
-    padding: 5px;
-    text-align: center;
-    background-color: #110909;
-    border-radius: 20%;
-}
-
-.card button {
-     background-color: #220721;
-      border-style: none;
-}
-
-.card button:hover{
-    background-color:#501a5e;
 }
 
 .nav-link {
-            color: white;
+    color: white;
 }
 
 
@@ -282,3 +254,4 @@ main {
 .section-footer {
     background-color: #220721;
 }
+

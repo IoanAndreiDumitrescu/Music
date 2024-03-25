@@ -20,20 +20,18 @@
 
                             <div class="row">
                                 <div class="col-md-6 mb-4">
-
                                     <div class="form-outline">
-                                        <input type="text" id="firstName" class="form-control form-control-lg" />
+                                        <input type="text" id="firstName" class="form-control form-control-lg" required />
                                         <label class="form-label" for="firstName">Nombre</label>
+                                        <div class="invalid-feedback">This field must be filled.</div>
                                     </div>
-
                                 </div>
                                 <div class="col-md-6 mb-4">
-
                                     <div class="form-outline">
-                                        <input type="text" id="lastName" class="form-control form-control-lg" />
+                                        <input type="text" id="lastName" class="form-control form-control-lg" required />
                                         <label class="form-label" for="lastName">Apellido</label>
+                                        <div class="invalid-feedback">This field must be filled.</div>
                                     </div>
-
                                 </div>
                             </div>
 
@@ -41,8 +39,9 @@
                                 <div class="col-md-6 mb-4 d-flex align-items-center">
 
                                     <div class="form-outline datepicker w-100">
-                                        <input type="text" class="form-control form-control-lg" id="birthdayDate" pattern="^(?:(?:31(/|-|.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(/|-|.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(/|-|.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(/|-|.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$" />
+                                        <input type="text" id="birthdayDate" class="form-control form-control-lg" pattern="\d{2}/\d{2}/\d{4}" placeholder="DD/MM/YYYY" />
                                         <label for="birthdayDate" class="form-label">Fecha de nacimiento</label>
+                                        <div class="invalid-feedback">Please enter date in DD/MM/YYYY format.</div>
                                     </div>
 
                                 </div>
@@ -78,8 +77,9 @@
                                 <div class="col-md-6 mb-4 pb-2">
 
                                     <div class="form-outline">
-                                        <input type="email" id="emailAddress" class="form-control form-control-lg" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
+                                        <input type="email" id="emailAddress" class="form-control form-control-lg" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
                                         <label class="form-label" for="emailAddress">Email</label>
+                                        <div class="invalid-feedback">Email field cannot be empty.</div>
                                     </div>
 
                                 </div>
