@@ -1,0 +1,30 @@
+.gradient-custom{
+    background: #2a2837;
+}
+
+.card-body{
+    background-color:antiquewhite;
+}
+
+.btn{
+    background-color:#322641;
+    border-style:none;
+}
+
+.btn:hover{
+    background-color: #0d0924;
+}
+input[type="radio"]:checked{
+    background-color: #322641;
+    border-color: #322641;
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}
